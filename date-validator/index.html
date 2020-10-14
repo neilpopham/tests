@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Validator</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <style type="text/css">
+            body {
+                font-family:Arial,Helvetica;
+                font-size:100%;
+            }
+            div.dt_row {
+                padding: 8px 0 0;
+            }
+            div.dt_label {
+                font-size: 1em;
+                font-weight:bold;
+            }  
+            div.dt_input {
+                padding: 0;
+            }  
+            :focus {
+                outline: none;
+                border: 1px solid #2e81ad;
+            }
+            input {
+                border: 1px solid #c0c0c0;
+                padding: 8px;
+                border-radius: 2px;
+                font-size: 1.3em;
+            }
+            div.dt_info {
+                font-size: 0.8em;
+                color: #808080;
+            }
+            div.dt_buttons {
+                margin-top:1em;
+            }
+            button {
+                border: 1px solid #216284;
+                background-color: #2e81ad;
+                color: #fff;            
+                padding: 8px;
+                text-transform: uppercase;
+            } 
+            button:focus {
+               border-color: #406f88;
+            }   
+            i.fa {
+                font-size: 1.5em;
+            }
+            i.fa-exclamation-circle {
+                color: #a00000;
+            }    
+            i.fa-check-circle {
+                color: #00a000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Date Validator</h1>
+
+        <div class="dt_row dt_label">
+            <label for="date1">Date</label>
+        </div>
+
+        <div class="dt_row dt_input">
+            <input
+                id="date1"
+                class="dt_input dt_date"
+                type="text"
+                placeholder="DD/MM/YYYY"
+                size="10"
+                maxlength="10"
+                name="date1" />
+            <i id="date1_indicator" style="display:none;" class="fa fa-exclamation-circle"></i>
+        </div>    
+
+        <div class="dt_row dt_info">
+            Please enter a valid date in the format DD/MM/YYYY.
+        </div>  
+
+        <div class="dt_row dt_buttons">
+            <button>Submit</button>
+        </div> 
+
+        <h2>Notes</h2>
+
+        <p>
+            I've assumed that you didn't want me to use the date input type at all.
+        </p>
+        <p>
+            Any non-future date is currently valid.
+            Further validation may be required if this were a date of birth field.
+        </p>
+
+        <script src="validation.js"></script>
+        <script src="index.js"></script>
+
+    </body>
+</html>
