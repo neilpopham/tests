@@ -1,0 +1,82 @@
+body {
+    font-family:Arial,Helvetica;
+    font-size:100%;
+}
+form {
+    padding: 20px;
+    background-color: #dfdfdf;
+    border-radius: 6px;
+}
+div.dt_row {
+    padding: 8px 0 0;
+}
+div.dt_label {
+    padding: 8px 0 2px 4px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2e81ad;
+}  
+div.dt_input {
+    padding: 0;
+}  
+:focus {
+    outline: none;
+    border: 1px solid #2e81ad;
+}
+input {
+    /*
+    border: 1px solid #c0c0c0;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 1.3em;
+    */
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1.3em;
+}
+::placeholder {
+      color: #d0d0d0;
+      opacity: 1;
+    }
+
+:-ms-input-placeholder {
+    color: #d0d0d0;
+}
+
+::-ms-input-placeholder {
+    color: #d0d0d0;
+}
+div.dt_info {
+    margin: 4px 0;
+    font-size: 0.8em;
+    color: #808080;
+}
+span.td_warning {
+    background-color: #800000;
+    color: #ffffff;
+    padding: 8px;
+}
+div.dt_buttons {
+    margin-top:1em;
+}
+button {
+    border: 1px solid #216284;
+    border-radius: 4px;
+    background-color: #2e81ad;
+    color: #fff;            
+    padding: 8px;
+    text-transform: uppercase;
+} 
+button:focus {
+   border-color: #406f88;
+}   
+i.fa {
+    font-size: 1.5em;
+}
+i.fa-exclamation-circle {
+    color: #a00000;
+}    
+i.fa-check-circle {
+    color: #00a000;
+}

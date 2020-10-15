@@ -2,7 +2,7 @@ class DateValidator {
     parts = null;
     error = "";
     constructor(strDate) {
-        this.value = strDate;
+        this.value = strDate || "";
     }
     get valid() {
         this.parts = this.value.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
